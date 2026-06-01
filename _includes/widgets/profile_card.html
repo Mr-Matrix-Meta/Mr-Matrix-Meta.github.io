@@ -49,9 +49,11 @@
                 <hr />
                 <div class="row">
                     <div class="col">
+                        {% if site.data.profile.email %}
                         <a class="pr-3" href="mailto:{{ site.data.profile.email | encode_email }}">
                             <i class="fas fa-at"></i> <span class="email-text">{{ site.data.profile.email | replace: "@", "(at)" }}</span>
                         </a>
+                        {% endif %}
 
                         {% if site.data.profile.gscholar %}
                         {%- if site.data.profile.gscholar contains 'scholar.google' -%}
@@ -65,7 +67,12 @@
                         {% endif %}
                         
                         {% if site.data.profile.github %}
-                        <a class="pr-3 no-break" target="_blank" href="https://github.com/{{ site.data.profile.github }}">
+                        {%- if site.data.profile.github contains 'http' -%}
+                        {%- assign github_url = site.data.profile.github -%}
+                        {%- else -%}
+                        {%- assign github_url = 'https://github.com/' | append: site.data.profile.github -%}
+                        {%- endif -%}
+                        <a class="pr-3 no-break" target="_blank" href="{{ github_url }}">
                             <i class="fab fa-github"></i> GitHub
                         </a>
                         {% endif %}
@@ -77,7 +84,12 @@
                         {% endif %}
 
                         {% if site.data.profile.twitter %}
-                        <a class="pr-3 no-break" target="_blank" href="https://twitter.com/{{ site.data.profile.twitter }}">
+                        {%- if site.data.profile.twitter contains 'http' -%}
+                        {%- assign twitter_url = site.data.profile.twitter -%}
+                        {%- else -%}
+                        {%- assign twitter_url = 'https://twitter.com/' | append: site.data.profile.twitter -%}
+                        {%- endif -%}
+                        <a class="pr-3 no-break" target="_blank" href="{{ twitter_url }}">
                             <i class="fab fa-twitter"></i> Twitter
                         </a>
                         {% endif %}

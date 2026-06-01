@@ -23,6 +23,19 @@
     </div>
     {% include footer.html %}
 
+    <div class="modal fade" id="image-preview-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+            <div class="modal-content image-preview-content border-0">
+                <button type="button" class="close image-preview-close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-body text-center p-2 p-md-3">
+                    <img id="image-preview-target" class="img-fluid rounded" alt="Image preview">
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>

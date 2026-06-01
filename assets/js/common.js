@@ -39,4 +39,41 @@ $(function () {
     $(".lazy").on("load", function () {
         $grid.masonry('layout');
     });
+
+    function getPreviewSrc($element) {
+        return $element.attr('data-preview-src') || $element.attr('data-src') || $element.attr('src');
+    }
+
+    function isZoomableImage($element) {
+        if ($element.hasClass('inline-badge')) {
+            return false;
+        }
+
+        return $element.is('.figure-img, .rounded-circle, .lazy.w-100, .img-fluid.rounded-xl, .img-fluid.rounded-xl-top, .img-fluid.rounded-xl-bottom, .media img');
+    }
+
+    $(document).on('click', 'img', function (event) {
+        var $image = $(this);
+        if (!isZoomableImage($image)) {
+            return;
+        }
+
+        var previewSrc = getPreviewSrc($image);
+        if (!previewSrc || previewSrc.indexOf('empty_300x200.png') !== -1) {
+            return;
+        }
+
+        event.preventDefault();
+        event.stopPropagation();
+
+        $('#image-preview-target')
+            .attr('src', previewSrc)
+            .attr('alt', $image.attr('alt') || 'Image preview');
+
+        $('#image-preview-modal').modal('show');
+    });
+
+    $('#image-preview-modal').on('hidden.bs.modal', function () {
+        $('#image-preview-target').attr('src', '');
+    });
 })

@@ -1,19 +1,16 @@
-primary_name: "Elon Musk"
-secondary_name: "埃隆·马斯克"
-navbar_name: "Elon Musk"
+primary_name: "白洋"
+secondary_name: "Bai Yang"
+navbar_name: "白洋"
 
 positions:
-- name: Technology Entrepreneur
-- name: Engineer
-- name: Founder & CEO of SpaceX
-- name: CEO of Tesla, Inc.
+- name: 河北诺亚人力资源发展集团有限公司前首席AI架构师
+- name: 中移在线服务有限公司河北分公司前高级AI算法工程师
+- name: 中国人民财产保险股份有限公司河北省分公司前数据分析研究员
 
-
-# email: "elon@spacex.com"
+# email: "your-email@example.com"
 # cv_link: link-to-your-cv-file
-# gscholar: xFmQpf4AAAAJ
-github: https://github.com/tesla
-twitter: https://x.com/elonmusk
+# gscholar: your-google-scholar-id
+# github: your-github-id
 # wechat_qrcode: /assets/images/etc/wechat.jpg
 # wechat_prompt: >-
 #   Please tell me your <strong>name</strong> and <strong>affiliation</strong> (current or past) when adding my wechat. Thanks!
@@ -23,37 +20,83 @@ twitter: https://x.com/elonmusk
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    Elon Musk is a technology entrepreneur and engineer known for work in launch systems,
-    electric vehicles, energy storage, and large-scale manufacturing.
+    有着扎实的数学知识和丰富的工程实践经验，善于深入浅出的讲授人工智能领域相关原理。
   </p>
   <p>
-    Publicly documented technical interests include space systems engineering, sustainable
-    energy systems, artificial intelligence and robotics, and large-scale technological innovation.
+    围绕构建高效、智能的AI系统这一核心目标，系统性地涵盖从底层算法到上层应用的全栈技术体系，具体包括以下三大层面：
+  </p>
+  <p>
+    第一，高性能AI系统后端工程。具备扎实的Python后端开发能力，精通Django、Flask、FastAPI等主流Web框架，尤其擅长基于FastAPI加ASGI的高性能异步API架构设计与高并发服务部署。深入理解asyncio异步编程模型与事件循环机制，能够设计高吞吐、低延迟的服务系统。熟练运用MySQL、PostgreSQL、Redis及消息队列进行系统解耦与性能优化，掌握Docker容器化部署、Nginx反向代理及Linux服务运维，具备从系统设计到落地部署的完整工程能力。
+  </p>
+  <p>
+    第二，机器学习与深度学习算法。具备扎实的机器学习理论基础，深入理解梯度下降优化机制及各类核心算法，包括线性回归、逻辑回归、SVM、决策树、集成学习和聚类等，并能够基于业务场景进行系统化特征工程与模型评估。在计算机视觉方向具有丰富工程经验，熟练使用OpenCV，深入理解两阶段检测R-CNN系列与一阶段检测YOLO系列原理，熟悉语义与实例分割、OCR全流程、姿态估计及多目标跟踪。掌握PyTorch与TensorFlow，熟悉CNN与Transformer架构及注意力机制优化。
+  </p>
+  <p>
+    第三，大模型核心技术与应用。深入理解Transformer架构及DeepSeek、Qwen、MoE等主流模型设计。研究覆盖SFT、LoRA、QLoRA等高效微调技术，以及RLHF、PPO、DPO、GRPO等对齐训练方法。具备DeepSpeed混合并行分布式预训练经验与TensorRT推理优化能力。在数据侧，熟悉多源数据集构建及并行化清洗流程。同时，专注RAG与Agent应用开发，精通LangChain与LangGraph等框架，具备MCP协议开发经验，致力于推动大模型在复杂业务场景中的高效落地。
   </p>
 
-portrait_url: /assets/images/photos/portrait.png
-# portrait_caption: Official portrait
+portrait_url: /assets/images/photos/白洋2025.jpg
+portrait_caption: 官方肖像
 
 education:
-- name: Queen's University
-  logo: /assets/images/badges/Queen_University.jpg
-  position: Physics and Economics (not completed)
-  date: 1989 - 1992
-- name: University of Pennsylvania
-  logo: /assets/images/badges/University_of_Pennsylvania.jpg
-  position: B.S. in Physics, B.A. in Economics
-  date: 1992 - 1997
+- name: 河北大学
+  logo: /assets/images/badges/hbu.jpg
+  position: "硕士 · 控制理论与控制工程"
+  date: 2013.9 - 2016.9
+- name: 宁夏理工学院
+  logo: /assets/images/badges/nxlg.jpeg
+  position: "本科 · 自动化"
+  date: 2008.9 - 2012.9
 
-# experience:
-# - name: Peking University
-#   logo: /assets/images/badges/PKU_red.png
-#   position: Research Intern
-#   date: Sep. 2019 - Jul. 2021
+experience:
+- name: 河北诺亚人力资源发展集团有限公司
+  position: "首席AI架构师"
+  date: 2025.5 - 2026.7
+  description: >-
+    <p><strong>公司背景：</strong>河北诺亚人力资源发展集团成立于2001年，是河北省领先的人力资源服务机构，业务覆盖人力资源RPO（业务流程外包）、KPO（高端才智外包）、人才引进与创业孵化服务，服务网络覆盖河北省11个地市，并在京津冀区域持续拓展数字化人力资源服务体系。</p>
+    <p><strong>工作职责：</strong></p>
+    <ol>
+      <li>负责集团 AI技术战略与算力平台规划，建设企业级 GPU算力平台，推动大模型在集团业务中的私有化部署与规模化应用。</li>
+      <li>主导Qwen、DeepSeek 等大模型私有化部署与微调（SFT），构建面向人力资源场景的智能应用体系。</li>
+      <li>基于 MINEU + GraphRAG 构建集团级人力资源知识库问答系统（HR RAG），整合政策法规、招聘流程及业务知识，实现智能检索与问答服务。</li>
+      <li>设计并落地 AI面试官系统，基于 DeepAgent 多智能体架构实现简历解析、智能提问、候选人能力评估等自动化面试流程。</li>
+      <li>推动 AI与企业数据平台融合，对接集团数据仓库与数据治理体系（Doris、DolphinScheduler、ETL、FineReport BI、DataEase），构建数据驱动的智能分析与决策支持能力。</li>
+      <li>负责AI项目的技术选型、架构设计与团队技术管理，推动AI能力在人力资源招聘、人才评估与企业服务场景中的实际落地。</li>
+    </ol>
+- name: 中移在线服务有限公司河北分公司
+  position: "高级AI算法工程师"
+  date: 2018.5 - 2025.5
+  description: >-
+    <p><strong>公司背景：</strong>中国移动在线服务有限公司河北分公司为河北移动客服中心，负责全省约 3000万移动用户的客户服务与运营支撑，涵盖 10086热线、移动APP、微信公众号等多渠道客服体系。核心业务系统包括 CRM、业务支撑系统、来电客户轨迹系统、精准营销系统、IVR智能导航及灵犀平台，服务场景涉及 CHBN（个人客户、家庭客户、政企客户及新兴业务）。</p>
+    <p><strong>工作职责：</strong></p>
+    <ol>
+      <li>负责智能客服与语音语义理解系统研发，构建基于NLP与大模型的客户来电意图识别与IVR智能导航系统，提升热线自助服务分流能力。</li>
+      <li>基于历史客服通话语料与投诉工单数据，开发工单NLP分析与投诉分类模型，实现自动标签化、问题归因及服务质量分析。</li>
+      <li>设计并落地 AI客服系统架构，在 GPU集群私有化部署 Qwen、DeepSeek 等大模型，构建企业级知识库RAG系统，并结合业务知识图谱优化客服知识检索与答案生成能力。</li>
+      <li>基于真实客服对话数据进行SFT微调与模型优化，持续提升客服问答准确率与业务理解能力。</li>
+      <li>参与政企客户AI解决方案项目研发，在智慧工厂场景中应用计算机视觉技术（缺陷检测、目标检测与追踪、视频语义分割）实现工业生产智能化升级。</li>
+    </ol>
+- name: 中国人民财产保险股份有限公司河北省分公司
+  position: "高级后端工程师"
+  date: 2016.7 - 2018.5
+  description: >-
+    <p><strong>公司背景：</strong>中国人民财产保险股份有限公司（PICC）为国内大型国有保险集团，河北省分公司承担区域保险产品销售、理赔服务及互联网保险业务平台建设。</p>
+    <p><strong>工作职责：</strong>负责互联网保险电商平台的后端架构设计与核心模块开发，基于 Django + MySQL + Redis + Celery 构建高并发保险销售系统，完成用户中心、保险产品管理及销售报表等模块开发，并通过缓存优化、异步任务处理与Nginx部署提升系统性能与稳定性。</p>
 
 awards:
-- name: Time Person of the Year
-  date: 2021
-- name: Fellow of the Royal Society (FRS)
-  date: 2018
-- name: Listed in Forbes Billionaires
-  date: Multiple years
+- name: 国家励志奖学金
+  org: 宁夏回族自治区教育厅
+  date: 2010.12
+  cover: /assets/images/covers/微信图片_202603181411311.jpg
+- name: 硕士研究生国家奖学金
+  org: 中华人民共和国教育部
+  date: 2015.12
+  cover: /assets/images/covers/微信图片_202603181411321.jpg
+- name: 河北省普通高等学校优秀毕业生
+  org: 河北省教育厅
+  date: 2016.6
+  cover: /assets/images/covers/微信图片_20260318141131.jpg
+- name: 人工智能算法工程师
+  org: 中国移动网上人才发展中心
+  date: 2023.3
+  cover: /assets/images/covers/微信图片_20260420140612.jpg

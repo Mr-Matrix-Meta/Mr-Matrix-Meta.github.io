@@ -1,7 +1,7 @@
 ---
 layout: default
 title : Homepage
-navbar_title: Home
+navbar_title: 首页
 ---
 
 <div class="row">
@@ -20,11 +20,8 @@ navbar_title: Home
             {% include widgets/experience_card.html %}
         {% endif %}
 
-        {% if site.data.display.homepage.show_news %}
-        {% assign count_news = site.news | size %}
-        {% if count_news > 0 %}
-        {% include widgets/news_card.html limit=site.data.display.homepage.num_news %}
-        {% endif %}
+        {% if site.data.display.homepage.show_awards %}
+            {% include widgets/awards_card.html %}
         {% endif %}
 
         {% if site.data.display.homepage.show_selected_publications %}
@@ -32,7 +29,7 @@ navbar_title: Home
         {%
         include widgets/publication_card.html
         publications=pubs
-        title='<i class="fas fa-star"></i> Technical White Papers & Visionary Plans'
+        title='科研成果'
         %}
         {% endif %}
     </div>

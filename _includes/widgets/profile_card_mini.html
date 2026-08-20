@@ -29,7 +29,11 @@
                 <div class="row small">
                     <div class="col text-center">
                         {% for position in site.data.profile.positions %}
+                        {% if position.color -%}
+                        <span style="color: {{ position.color }};">{{ position.name }}</span><br/>
+                        {%- else -%}
                         {{ position.name }}<br/>
+                        {%- endif %}
                         {% endfor %}
                     </div>
                 </div>

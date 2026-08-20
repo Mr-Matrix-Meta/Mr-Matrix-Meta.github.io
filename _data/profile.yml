@@ -3,6 +3,8 @@ secondary_name: "Bai Yang"
 navbar_name: "白洋"
 
 positions:
+- name: 雄安人工智能教育科技有限公司AI专业讲师
+  color: "#d00000"
 - name: 河北诺亚人力资源发展集团有限公司前首席AI架构师
 - name: 中移在线服务有限公司河北分公司前高级AI算法工程师
 - name: 中国人民财产保险股份有限公司河北省分公司前数据分析研究员

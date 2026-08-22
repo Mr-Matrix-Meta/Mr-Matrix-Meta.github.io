@@ -49,6 +49,10 @@ education:
   logo: /assets/images/badges/nxlg.jpeg
   position: "本科 · 自动化"
   date: 2008.9 - 2012.9
+- name: 河北正定中学
+  logo: /assets/images/badges/a8014c086e061d950a7b8585fbac1dd162d9f2d35c4f.jpg
+  position: "高中"
+  date: 2005.9 - 2008.9
 
 experience:
 - name: 河北诺亚人力资源发展集团有限公司
